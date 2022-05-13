@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>View or pickup an item from a community fridge</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+  <link rel="stylesheet" href="css/comm-fridge.css" />
+</head>
+
+<body id="view_items">
+  <menu>
+    <a href="index.html"><i class="fas fa-bars"></i></a>
+  </menu>
+  <section id="fridges">
+  </section>
+
+  <section id="fridge_details" class="hidden">
+    <h1 id="frigeHeading">Items in fridge x</h1>
+
+    <div id="left-column">
+      <p><span id="fridge_name">Parkdale Fridge</span><br />
+      30 Rosemount Ave #2<br />
+      (613) 722-8019</p>
+      <div id="meter">
+        <span></span>
+      </div>
+      <div id="food_categories">
+        <ul id="categories">
+        </ul>
+      </div>
+    </div>
+
+    <div id="middle-column">
+      <div id="item_name" class="item">
+        <img src="images/bakery/buns.jpeg" width="100px" height=100px; />
+        <div id="item_details">
+          <p>Item name</p>
+          <p>Quantity: <span id="qt-1">5</span></p>
+          <p>Pickup item:</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="right-column">
+      <h2>You have picked up the following items:</h2>
+    </div>
+
+  </section>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/comm-fridge.js"></script>
+</body>
+</html>
